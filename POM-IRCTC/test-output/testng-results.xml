@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3162" started-at="2019-09-02T06:29:18Z" finished-at="2019-09-02T06:29:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3162" started-at="2019-09-02T06:29:18Z" finished-at="2019-09-02T06:29:21Z">
+      <class name="pom.irctc.testcases.TC001">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="beforeSuite" is-config="true" duration-ms="699" started-at="2019-09-02T11:59:17Z" finished-at="2019-09-02T11:59:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-09-02T11:59:18Z" finished-at="2019-09-02T11:59:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-09-02T11:59:18Z" finished-at="2019-09-02T11:59:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-09-02T11:59:18Z" finished-at="2019-09-02T11:59:18Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at wrappers.GenericWrappers.takesnap(GenericWrappers.java:988)
+	at utils.Report.logStatus(Report.java:21)
+	at wrappers.GenericWrappers.invokeApp(GenericWrappers.java:88)
+	at wrappers.ProjectWrappers.beforeMethod(ProjectWrappers.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="irctcSignUp()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="irctcSignUp" duration-ms="1" started-at="2019-09-02T11:59:21Z" finished-at="2019-09-02T11:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- irctcSignUp -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-09-02T11:59:21Z" finished-at="2019-09-02T11:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-09-02T11:59:21Z" finished-at="2019-09-02T11:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-09-02T11:59:21Z" finished-at="2019-09-02T11:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:pom.irctc.testcases.TC001@1550481]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-09-02T11:59:21Z" finished-at="2019-09-02T11:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- pom.irctc.testcases.TC001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

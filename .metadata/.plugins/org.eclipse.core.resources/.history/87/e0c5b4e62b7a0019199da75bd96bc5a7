@@ -1,0 +1,66 @@
+package testcases;
+ 
+
+
+import org.testng.annotations.Test;
+
+import wrappers.DP003;
+import wrappers.ProjectWrappers;
+
+public class TC003 extends ProjectWrappers {
+	
+	@Test(dataProvider="fetchData", dataProviderClass=DP003.class)
+	public void nvsp() throws InterruptedException {
+    	//invokeApp("chrome", "https://www.irctc.co.in");
+        //clickByLink("AGENT LOGIN");
+        //clickByXpath("//*[@id='loginFormId']/div[1]/div[2]/table[1]/tbody/tr[1]/td[3]/a");
+        clickByXpath("//*[@id='bluemenu']/ul/li[6]/a");
+        clickByXpath("//*[@id='bluemenu']/ul/li[6]/ul/li[3]/a");
+        switchToLastWindow();
+        sleepThread(10000);
+        clickByXpath("//*[@id='main-content']/div/div/div[2]/div[1]/div[1]/div/div[2]/a");
+        switchToLastWindow();
+        sleepThread(10000);
+        selectIndexById("language", 1);
+        sleepThread(5000);
+        selectIndexByName("ST_CODE", 1);
+        sleepThread(5000);
+        selectIndexById("distList", 1);
+        sleepThread(5000);
+        selectIndexByName("AC_NO", 1);
+        sleepThread(5000);
+        clickById("isExistingVoter");
+        enterById("applicantName", "Poorvi");
+        enterById("applicantSurname", "Visha");
+        enterById("applicantFMHName", "Arun");
+        enterById("applicantFMHSurname", "Prakash");
+        selectIndexById("applicantRelationType", 1);
+        clickById("RbdDateOfBirth");
+        enterById("txtDateOfBirth", "19021990");
+        selectIndexById("elector_gender", 1);
+		enterById("applicantPresentHouseNo", "12B");
+		enterById("applicantPresentStreet", "Test Street");
+		enterById("applicantPresentVillage", "Chennai");
+		enterById("applicantPresentPostoffice", "Medavakkam");
+		enterById("applicantPresentPincode", "600100");		
+		clickById("chkPermanent");
+		enterById("applicantFamilyPrevepicno", "ABC123456");
+		enterByName("OTHER_DISABLITY", "Not Applicable");
+		enterById("applicantEmail", "tester@email.com");
+		enterById("applicantMobile", "9876543210");
+		enterById("applicantBirthVillage", "Chennai");
+		selectIndexById("applicantBirthState", 1);
+		sleepThread(5000);
+		selectIndexById("applicantBirthDistrict", 1);
+		enterById("txtRESIDENT_SINCE", "15052010");
+		selectIndexById("ddPrevState", 1);
+		selectIndexById("ddPrevac", 1);
+		enterById("applicantPreHouseNo", "11");
+		enterById("applicantPreStreet", "prev st");
+		enterById("applicantPreVillage", "pre town");
+		enterById("applicantPrePostoffice", "pre post");
+		enterById("applicantPrePincode", "600100");
+		selectIndexById("Prev_DistNo", 1);
+		enterById("applicantFormPlace", "Medavakkam");
+	}
+}

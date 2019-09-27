@@ -1,0 +1,61 @@
+package weektwo;
+
+import java.util.Set;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class TestCaseTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+
+		ChromeDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+
+		driver.get("https://www.irctctourism.com/");
+
+		/*driver.get("https://www.irctc.co.in");
+
+		driver.findElementByLinkText("AGENT LOGIN").click();
+
+		driver.findElementByXPath("//*[@id='loginFormId']/div[1]/div[2]/table[1]/tbody/tr[1]/td[3]/a").click();
+
+		driver.findElementByXPath("//*[@id='bluemenu']/ul/li[2]/a").click();
+
+		driver.findElementByXPath("//*[@id='bluemenu']/ul/li[2]/ul/li[2]/a").click();
+
+		driver.findElementByXPath("//*[@id='bluemenu']/ul/li[2]/ul/li[2]/ul/li[4]/a").click();
+
+		Set<String> allwinid = driver.getWindowHandles();
+
+		for (String eachwinid : allwinid) {
+
+		                System.out.println(eachwinid);
+
+		                driver.switchTo().window(eachwinid);
+
+		}
+*/
+		driver.findElementByXPath("//*[@id='slider-1']/div[1]/div[2]/a[3]/div").click();
+
+		WebElement stationname = driver.findElementByName("city");
+		Select selstationname = new Select(stationname);
+		selstationname.selectByIndex(1);
+
+		
+		//driver.findElementByXPath("").click();
+
+		 
+
+		 
+
+		 
+
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DP.java&apos; to &apos;POM-IRCTC/src/main/java/utils&apos;&#x0D;&#x0A;- Original project: &apos;ProjectImplementation&apos;&#x0D;&#x0A;- Destination element: &apos;POM-IRCTC/src/main/java/utils&apos;&#x0D;&#x0A;- Original element: &apos;utils.DP.java&apos;" description="Copy compilation unit" destination="=POM-IRCTC/src\/main\/java&lt;utils" element1="/src\/main\/java&lt;utils{DP.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1559472992860" units="1" version="1.0"/>
+</session>

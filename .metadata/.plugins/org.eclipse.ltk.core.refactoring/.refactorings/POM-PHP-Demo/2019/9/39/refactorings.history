@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;DemoGITRepo/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;POM-PHP-Demo&apos;&#x0D;&#x0A;- Destination element: &apos;DemoGITRepo/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     POM-PHP-Demo/src/main/java/utils&#x0D;&#x0A;     POM-PHP-Demo/src/main/java/pom.php.pages&#x0D;&#x0A;     POM-PHP-Demo/src/main/java/wrappers&#x0D;&#x0A;     POM-PHP-Demo/src/main/java/pom.php.testcases" description="Copy packages" destination="=DemoGITRepo/src\/main\/java" element1="/src\/main\/java&lt;utils" element2="/src\/main\/java&lt;pom.php.pages" element3="/src\/main\/java&lt;wrappers" element4="/src\/main\/java&lt;pom.php.testcases" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1569577190603" version="1.0"/>
+</session>

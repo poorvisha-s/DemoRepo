@@ -1,0 +1,27 @@
+package weektwo;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class TestCaseTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+
+		ChromeDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+		driver.get("https://www.irctc.co.in");
+		driver.findElementByLinkText("AGENT LOGIN").click();
+        driver.findElementByXPath("//*[@id='loginFormId']/div[1]/div[2]/table[1]/tbody/tr[1]/td[3]/a").click();
+        /*driver.findElementById("userRegistrationForm:userName").sendKeys("poorvi_s");
+		driver.findElementById("userRegistrationForm:password").sendKeys("test@123");
+		driver.findElementById("userRegistrationForm:confpasword").sendKeys("test@123");
+		WebElement secques = driver.findElementById("userRegistrationForm:securityQ");
+		Select selsecques = new Select(secques);
+		selsecques.selectByIndex(2);*/
+	}
+
+}
